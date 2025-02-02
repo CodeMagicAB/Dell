@@ -1,6 +1,7 @@
 :root{
     --blue:rgb(50, 129, 255);
 }
+/* Nav */
 *{
     padding: 0;
     margin: 0;
@@ -37,6 +38,9 @@ nav{
     display: flex;
     box-shadow: 0 10px 10px -7px black;
 }
+.items{
+    width: 100%;
+}
 .items ul li{
     padding: 20px;
     list-style: none;
@@ -51,7 +55,91 @@ nav{
 .items ul li a:hover{
     color: rgb(28, 75, 150);
 }
+/* Nav */
+/* footer */
+.footer {
+    background-color: var(--blue);
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 0 5px black;
+}
+
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #ddd;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links li {
+    margin-right: 10px;
+}
+
+.social-links li a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgb(153, 153, 153);
+}
+
+.social-links li img {
+    height: 113px;
+    width: 135px;
+}
+
+.social-links li {
+    margin: 0 190px;
+}
+
+/* footer */
 @media (max-width: 768px){
+    /* Nav */
     .src input {
             margin: 25px 0;
             width: auto;
@@ -66,4 +154,26 @@ nav{
             box-shadow: 0 10px 10px -7px black;
             justify-content: center;
         }
+    /* Nav */
+    /* footer */
+        .footer-row {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .footer-column {
+            min-width: 100%;
+            text-align: center;
+        }
+    
+        .social-links li img {
+            width: 175px;
+            height: 154px;
+            margin: 0px 103px;
+        }
+    
+        .social-links li {
+            margin: 0;
+        }
+    /* footer */
 }
