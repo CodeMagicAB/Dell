@@ -243,7 +243,47 @@ h2{
     color: #fff;
 }
 
-
+.infotop{
+    margin-top: 70px;
+    width: 100%;
+    height: 500px;
+    padding: 100px;
+}
+.infotop h1{
+    color: var(--blue);
+    padding: 20px;
+    padding-bottom: 5px;
+    font-family: tahoma;
+    text-align: center;
+}
+.infotop h1+p{
+    color: var(--blue);
+    text-align: center;
+    font-family: tahoma;
+    font-size: 20px;
+}
+.skills{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.skillCard{
+    background-color: var(--blue);
+    width: 200px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0px 5px 10px rgba(150, 150, 150, 0.501);
+}
+.skillCard img{
+    width: 50px;
+    height: 50px;
+    margin: 10px 75px 0;
+}
+.skillCard h3{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
 @media (max-width: 1200px) {
     .card-list .card-item {
         padding: 15px;
@@ -294,4 +334,8 @@ h2{
             margin: 0;
         }
     /* footer */
+    .skills{
+        flex-direction: column;
+        align-items: center;
+    }
 }
