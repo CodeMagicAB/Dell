@@ -22,7 +22,7 @@
             <div class="items">
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">about</a></li>
+                    <li><a href="#about">about</a></li>
                     <li><a href="">Shop</a></li>
                     <li><a href="">Dev</a></li>
                 </ul>
@@ -30,9 +30,31 @@
     </nav>
 <!-- Nav -->
     <div class="infotop">
-        <h1>khaled abdallah</h1>
-        <p>متخـصص صيانة الكترونيـات وأجهزة دقيقـة</p>
+        <div class="kalam" dir="rtl">
+            <p>مرحبا.انا</p>
+            <h1 id="typed-text"></h1>
+            <p style="padding-bottom: 25px;">متخصص صيانة الكترونيات وأجهزة دقيقة</p>
+            <a href="img/خالد عبدالله.pdf" download="خالد عبدالله.pdf">تنزيل السيرة الذاتية <i class="fa-solid fa-download"></i></a>
+        </div>
+        <div class="photo">
+            <img src="img/chip (1).png" alt="">
+        </div>
     </div>
+    <section dir="rtl" id="about">
+        <h5>نبذة عني</h5>
+        <p>بدأت عملي في مجال صيانة
+        الالكترونيات في قسم الاجهزة
+        العلمية في كلية الهندسة بجامعة
+        أسيوط ، ثم إنتقلت الى العمل في
+        شركة كبيرة في صيانة وتصنيع
+        الد وائر الالكترونية ومنها قابلت
+        الكثر من المشكلات الكبيرة مما
+        علمني الكثير عن كيفية حلها
+        وتعلمت ايضا كيفية تشغيل
+        الشبكات والبرامج الخاصة بتشغيل
+        نظام الكمبيوتر</p>
+    </section>
+    <p class="pSk">مهاراتي</p>
     <div class="skills">
         <div class="skillCard">
             <img src="img/identification.png" alt="">
@@ -178,5 +200,27 @@
         </div>
     </footer>
     <!-- footer -->
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed("#typed-text", {
+                strings: ["khaled abdallah", "خالد عبد الله"],
+                typeSpeed: 100, // سرعة الكتابة
+                backSpeed: 50,  // سرعة المسح
+                backDelay: 1000, // وقت الانتظار قبل المسح
+                startDelay: 500, // تأخير البدء
+                loop: true // تشغيل اللوب باستمرار
+            });
+
+    </script>
+
 </body>
 </html>
