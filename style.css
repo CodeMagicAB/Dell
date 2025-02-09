@@ -325,10 +325,7 @@ h5+p{
     color: white;
     line-height: 1.5;
 }
-span{
-    width: 100%;
-    height: 60px;
-}
+
 @media (max-width: 1200px) {
     .card-list .card-item {
         padding: 15px;
